@@ -27,10 +27,10 @@ const DB = {
         { id: '8', code: 'PSYCH 1101', name: 'Intro to Psychology', instructor: 'Pizarro, D', days: 'Mon/Wed/Fri', time: '11:15 AM - 12:05 PM', location: 'Kennedy Hall 116', credits: 3, status: 'Enrolled' }
     ],
     transactions: [
-        { id: 101, date: '2026-01-15', description: 'Spring 2026 Tuition', amount: 32000, type: 'charge' },
-        { id: 102, date: '2026-01-15', description: 'Student Activity Fee', amount: 150, type: 'charge' },
-        { id: 103, date: '2026-01-15', description: 'Health Insurance', amount: 1800, type: 'charge' },
-        { id: 104, date: '2026-01-20', description: 'Payment - Wire Transfer', amount: 15930, type: 'payment' },
+        { id: 101, date: '2026-02-10', description: 'Spring 2026 Tuition', amount: 32000, type: 'charge' },
+        { id: 102, date: '2026-02-04', description: 'Student Activity Fee', amount: 150, type: 'charge' },
+        { id: 103, date: '2026-02-04', description: 'Health Insurance', amount: 1800, type: 'charge' },
+        { id: 104, date: '2026-02-03', description: 'Payment - Wire Transfer', amount: 15930, type: 'payment' },
     ]
 };
 

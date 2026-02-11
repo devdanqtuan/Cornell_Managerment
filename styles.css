@@ -1,0 +1,32 @@
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.cornell-red {
+    color: #B31B1B;
+}
+
+.bg-cornell-red {
+    background-color: #B31B1B;
+}
+
+.hover-bg-cornell-dark:hover {
+    background-color: #9e1515;
+}
+
+/* Custom scrollbar for tables if needed */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+::-webkit-scrollbar-thumb {
+    background: #ccc; 
+    border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #B31B1B; 
+}

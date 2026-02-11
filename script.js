@@ -68,8 +68,12 @@ const calculatePoints = (grade, credits) => {
 // --- ACTIONS ---
 window.handleLogin = async (e) => {
     e.preventDefault();
-    const netId = document.getElementById('netid').value;
-    const password = document.getElementById('password').value;
+    const netIdInput = document.getElementById('netid').value.trim();
+    const passwordInput = document.getElementById('password').value.trim();
+
+    // Specific credentials
+    const VALID_USER = 'danggiatuan193cssu@cornell.edu';
+    const VALID_PASS = 'Danggtuann0602';
 
     AppState.isLoading = true;
     AppState.loginError = '';
@@ -77,11 +81,11 @@ window.handleLogin = async (e) => {
 
     // Simulate network request
     setTimeout(() => {
-        if (netId && password) {
+        if (netIdInput === VALID_USER && passwordInput === VALID_PASS) {
             AppState.currentUser = DB.user;
             AppState.isLoading = false;
         } else {
-            AppState.loginError = 'Please enter both NetID and Password.';
+            AppState.loginError = 'Invalid NetID or Password.';
             AppState.isLoading = false;
         }
         render();
@@ -144,7 +148,7 @@ const renderLogin = () => `
 
                         <div>
                             <label class="block text-gray-700 text-sm font-bold mb-1" for="netid">NetID</label>
-                            <input type="text" id="netid" class="w-full border border-gray-300 p-2 focus:outline-none focus:border-[#B31B1B] transition-colors" placeholder="NetID">
+                            <input type="text" id="netid" class="w-full border border-gray-300 p-2 focus:outline-none focus:border-[#B31B1B] transition-colors" placeholder="NetID@cornell.edu">
                         </div>
 
                         <div>
